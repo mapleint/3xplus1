@@ -10,7 +10,7 @@ int main ()
 {
 	for (
 	unsigned long long i = 1;
-	i <= 0xFFFFFFFF'FFFFFFFFull;
+	i != 0; /* overflow */
 	i++) {
 		unsigned long long j = i;
 		while(j != 1) {
